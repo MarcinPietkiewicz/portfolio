@@ -1,4 +1,5 @@
 import './App.scss';
+import Portfolio from './Portfolio.js';
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
         <div id="header-name">Marcin Pietkiewicz</div>
         <div id="right-menu">
           <a href="#">about</a>
-          <a href="#">portfolio</a>
+          <a href="#">
+
+          </a>
           <a href="#">contect</a>
         </div>
       </header>
@@ -28,6 +31,7 @@ function App() {
         </section>
         <section id="portfolio">
           <div id="portfolio-title">portfolio</div>
+          <Portfolio />
           <div id="portfolio-tiles">portf tiles here...</div>
         </section>
         <section id="contact"></section>
