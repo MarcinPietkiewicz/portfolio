@@ -1,39 +1,53 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$redish: rgb(196, 22, 22);
+$time: 0.5s ease;
+$gray0: #fdfdfd;
+$gray1: #eee;
+$gray3: #999;
+$gray4: #333;
+$gray5: #111;
+
 .App {
-    background-color:#eee;
-    font-family: Armata, sans-serif;
+  background-color: $gray1;
+  font-family: Armata, sans-serif;
+}
+
+header {
+  background-color: $gray0;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 2px;
+
+  a {
+    text-decoration: none;
+    color: $gray4;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-bottom:2px solid transparent;
   }
-  
-  header {
-    background-color:#FDFDFD;
-    display:flex;
-    width:100%;
-    height:40px;
-    flex-flow:row;
-    justify-content: space-between;
-    align-items:center;
-    letter-spacing:2px;
+
+  a:hover {
+    color: $gray5;
+    border-bottom:2px solid $gray3;
+    transition: $time;
   }
-  
-  #header-name {
-    color: rgb(42, 61, 61)
-  }
-  
+
   #right-menu {
-    width:30%;
-    display:flex;
-    flex-flow:row;
-    justify-content:space-around;
+    box-sizing:border-box;
+    width: 30%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
   }
-  
-  header a {
-    text-decoration:none;
-    color:#333;
-    padding:5px 20px;
-    font-size:18px;
-  }
-  
-  #about, #portfolio, #contact {
-    height:800px;
-  }
+}
+
+#about,
+#portfolio,
+#contact {
+  height: 800px;
+}

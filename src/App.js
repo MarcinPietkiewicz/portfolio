@@ -8,9 +8,7 @@ function App() {
         <div id="header-name">Marcin Pietkiewicz</div>
         <div id="right-menu">
           <a href="#">about</a>
-          <a href="#">
-
-          </a>
+          <a href="#">portfolio</a>
           <a href="#">contect</a>
         </div>
       </header>
