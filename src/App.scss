@@ -8,13 +8,16 @@ $gray3: #999;
 $gray4: #333;
 $gray5: #111;
 
-.dark-mode {
-  color:green;
-  background-color: black;
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightgray;
 }
 
+
 .App {
-  // background-color: $gray1;
+  background-color: $gray1;
   font-family: Armata, sans-serif;
 }
 

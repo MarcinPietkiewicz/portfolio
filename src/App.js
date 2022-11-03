@@ -1,30 +1,13 @@
 import React from "react";
 import "./App.scss";
 import Portfolio from "./Portfolio.js";
-import { ThemeContext, themes } from "./ThemeContext";
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(false);
 
   return (
     <div className="App">
       <header className="App-header">
         <div id="header-name">Marcin Pietkiewicz</div>
-        <ThemeContext.Consumer>
-          {({ changeTheme }) => (
-            <button
-              type="button"
-              onClick={() => {
-                console.log('changing theme to...')
-                setDarkMode(!darkMode);
-                changeTheme(darkMode ? themes.dark : themes.light);
-                console.log('dark mode is ' + darkMode)
-              }}
-            >
-              Switch modes
-            </button>
-          )}
-        </ThemeContext.Consumer>
         <div id="right-menu">
           <a href="#">about</a>
           <a href="#">portfolio</a>
