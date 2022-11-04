@@ -3,7 +3,6 @@ import "./App.scss";
 import Portfolio from "./Portfolio.js";
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
@@ -16,8 +15,10 @@ function App() {
       </header>
       <main>
         <section id="about">
-          <div className="about-title">about the developer</div>
+          <div className="section-title">about the developer</div>
           <div className="about-pic-section">
+         
+              <img id="dev-img" src={require("./assets/marcin.jpg")} alt="" />
             <div className="about-pic">pic</div>
             <div className="links-section">links logos</div>
           </div>
@@ -30,11 +31,13 @@ function App() {
           </div>
         </section>
         <section id="portfolio">
-          <div id="portfolio-title">portfolio</div>
+          <div className="section-title">some of my work</div>
           <Portfolio />
           <div id="portfolio-tiles">portf tiles here...</div>
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+          <div className="section-title">contact me</div>
+        </section>
       </main>
       <footer>footer</footer>
     </div>
