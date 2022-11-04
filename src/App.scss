@@ -15,7 +15,6 @@ body {
   background-color: lightgray;
 }
 
-
 .App {
   background-color: $gray1;
   font-family: Armata, sans-serif;
@@ -30,23 +29,24 @@ header {
   justify-content: space-between;
   align-items: center;
   letter-spacing: 2px;
+  position:fixed;
 
   a {
     text-decoration: none;
     color: $gray4;
     padding: 5px 20px;
     font-size: 18px;
-    border-bottom:2px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 
   a:hover {
     color: $gray5;
-    border-bottom:2px solid $gray3;
+    border-bottom: 2px solid $gray3;
     transition: $time;
   }
 
   #right-menu {
-    box-sizing:border-box;
+    box-sizing: border-box;
     width: 30%;
     display: flex;
     flex-flow: row;
@@ -58,4 +58,10 @@ header {
 #portfolio,
 #contact {
   height: 800px;
+ 
+}
+
+#about {
+  background-color: #0093E9;
+  background-image: linear-gradient(120deg, #0093E9 0%, #80D0C7 100%);
 }

@@ -9,9 +9,9 @@ function App() {
       <header className="App-header">
         <div id="header-name">Marcin Pietkiewicz</div>
         <div id="right-menu">
-          <a href="#">about</a>
-          <a href="#">portfolio</a>
-          <a href="#">contect</a>
+          <a href="#about">about</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#contact">contact</a>
         </div>
       </header>
       <main>
