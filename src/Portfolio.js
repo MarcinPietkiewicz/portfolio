@@ -4,25 +4,37 @@ import "./Portfolio.scss";
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { projects: "loading..." };
+    this.state = { data: "" };
   }
 
-  async loadData() {
+  componentDidMount() {
+    this.fetchProjects();
+  }
+
+  fetchProjects() {
     fetch("http://localhost:3000/db")
-      .then((response) => {
-        console.log(response);
-        return response.json();
+      .then((response) => response.json())
+      .then((result) => {
+        console.log("getting result");
+        console.log(result.projects);
+        this.setState({ data: result.projects });
       })
-      .then((data) => {
-        console.log(data.projects);
-        let z = data;
-        this.setState({projects: z})
-      });
+      .catch((err) => console.log("Fetch error" + err));
   }
 
   render() {
-    this.loadData();
-    return <div id="port">{this.state.projects}</div>;
+    let z = [];
+
+    if (this.state.data !== "") {
+      this.state.data.map((project) => {
+        z.push(project.project_name);
+      });
+    }
+
+    return <div id="port">
+      <p>{z} | {z.project_description} | {z.tech_stack} | {z.banner}</p>
+      
+      </div>;
   }
 }
 
