@@ -32,8 +32,7 @@ class Portfolio extends React.Component {
       });
     }
 
-    return (<div id="port">
-      {console.log(z)}
+    return (<div id="port">{this.state.data?.project_name}
       { z.forEach(element => {
         return `<p> oij ${element.project_name} | ${element.project_description} | ${element.tech_stack} | ${element.banner} </p>`
       })
