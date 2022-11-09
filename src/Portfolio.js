@@ -15,8 +15,8 @@ class Portfolio extends React.Component {
     fetch("http://localhost:3000/db")
       .then((response) => response.json())
       .then((result) => {
-        // console.log("getting result");
-        // console.log(result.projects);
+        console.log("getting result");
+        console.log(result.projects);
         this.setState({ data: result.projects });
       })
       .catch((err) => console.log("Fetch error" + err));
@@ -28,7 +28,7 @@ class Portfolio extends React.Component {
     if (this.state.data !== "") {
       this.state.data.map((project) => {
         z.push([project.project_name, project.project_description, project.tech_stack, project.banner]);
-        // console.log(z);
+        console.log(z);
       });
     }
 
