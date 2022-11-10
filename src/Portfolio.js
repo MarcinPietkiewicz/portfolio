@@ -29,17 +29,21 @@ class Portfolio extends React.Component {
       this.state.data.map((project) => {
         z.push([project.project_name, project.project_description, project.tech_stack, project.banner]);
         console.log(z);
+        return z;
       });
     }
 
-    return (<div id="port">{this.state.data?.project_name}
-      { z.forEach(element => {
-        return `<p> oij ${element.project_name} | ${element.project_description} | ${element.tech_stack} | ${element.banner} </p>`
-      })
-
-      }
+    return (
+      <div id="port">
+        Tutaj wyniki
+      
+        {z.forEach((element) => {
+          console.log('hmm'+element);
+          <p>hammer</p>
+        })}
       </div>
-    )}
+    );
+  }
 }
 
 export default Portfolio;
