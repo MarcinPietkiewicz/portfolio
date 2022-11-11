@@ -7,7 +7,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div>
+      <div key={this.props.data[0]}>
         {this.props.data}
       </div>
     );

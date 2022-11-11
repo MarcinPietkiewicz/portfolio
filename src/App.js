@@ -62,7 +62,7 @@ function App() {
           <div className="section-title">contact me</div>
         </section>
       </main>
-      <footer>footer</footer>
+      <footer>Created by&nbsp;<a href="#">Marcin Pietkiewicz</a></footer>
     </div>
   );
 }

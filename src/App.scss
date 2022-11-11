@@ -22,9 +22,11 @@ body {
 .App {
   background-color: $gray1;
   font-family: Armata, sans-serif;
+  height:100%;
 }
 
 header {
+  z-index:99;
   background-color: $gray0;
   width: 100%;
   height: $menuOffset;
@@ -140,4 +142,25 @@ header {
       color:white;
     }
   }
+}
+
+#portfolio,#contact{
+  height:1000px;
+}
+
+
+footer {
+ background-color:white; 
+ height:50px; 
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.02);
+
+
+ a {
+  text-decoration:none;
+  color:$gray4;
+  
+ }
 }
