@@ -36,11 +36,12 @@ class Portfolio extends React.Component {
     return (
       <div id="port">
         Tutaj wyniki
-      
-        {z.forEach((element) => {
+      <ul>
+        {z.map((element) => {
           console.log('hmm'+element);
-          <p>hammer</p>
+          return <li>{element[0]}</li>;
         })}
+        </ul>
       </div>
     );
   }
