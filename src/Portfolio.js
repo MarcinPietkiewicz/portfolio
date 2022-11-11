@@ -1,5 +1,6 @@
 import React from "react";
 import "./Portfolio.scss";
+import Card from "./Card";
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -23,25 +24,25 @@ class Portfolio extends React.Component {
   }
 
   render() {
-    let z = [];
+    let data = [];
 
     if (this.state.data !== "") {
       this.state.data.map((project) => {
-        z.push([project.project_name, project.project_description, project.tech_stack, project.banner]);
-        console.log(z);
-        return z;
+        data.push([project.project_name, project.project_description, project.tech_stack, project.banner]);
+        console.log(data);
+        return data;
       });
     }
 
     return (
       <div id="port">
-        Tutaj wyniki
-      <ul>
-        {z.map((element) => {
-          console.log('hmm'+element);
-          return <li>{element[0]}</li>;
+        {data.map((element, index) => {
+          return (
+            <div>
+              <Card id={index} data={element}/>
+            </div>
+          );
         })}
-        </ul>
       </div>
     );
   }
