@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.scss";
 
 class Card extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Card extends React.Component {
 
   render() {
     return (
-      <div key={this.props.data[0]}>
+      <div className="card" key={this.props.data[0]}>
         {this.props.data}
       </div>
     );
