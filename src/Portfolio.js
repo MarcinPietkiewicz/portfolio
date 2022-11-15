@@ -34,11 +34,7 @@ class Portfolio extends React.Component {
     return (
       <div id="port">
         {data.map((element, index) => {
-          return (
-            <div className="card">
-              <Card key={index} data={element}/>
-            </div>
-          );
+          return <Card key={index} data={element} />;
         })}
       </div>
     );
