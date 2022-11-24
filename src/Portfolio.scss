@@ -2,8 +2,8 @@
 
 
 #port {
+    // width: 100%;
+    max-width: 800px;
     display:grid;
-    grid-column: 1fr 1fr 1fr;
-    background-color:yellow;
-  
+    grid-template-columns: repeat(4, 1fr);
   }

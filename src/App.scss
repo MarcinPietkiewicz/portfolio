@@ -145,7 +145,9 @@ header {
 }
 
 #portfolio,#contact{
-  height:1000px;
+  display: flex;
+  flex-flow:column;
+  align-items:center;
 }
 
 

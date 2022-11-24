@@ -56,7 +56,6 @@ function App() {
         <section id="portfolio">
           <div className="section-title">some of my work</div>
           <Portfolio />
-          <div id="portfolio-tiles">portf tiles here...</div>
         </section>
         <section id="contact">
           <div className="section-title">contact me</div>
