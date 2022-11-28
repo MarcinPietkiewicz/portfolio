@@ -10,7 +10,7 @@ $gray5: #111;
 $paddMenu: 10px;
 $paddMain: 15%;
 $menuOffset: 50px;
-$menuFontSize: 1.2em;
+$menuFontSize: 1.3em;
 
 body {
   margin: 0;
@@ -22,11 +22,11 @@ body {
 .App {
   background-color: $gray1;
   font-family: Armata, sans-serif;
-  height:100%;
+  height: 100%;
 }
 
 header {
-  z-index:99;
+  z-index: 99;
   background-color: $gray0;
   width: 100%;
   height: $menuOffset;
@@ -35,7 +35,7 @@ header {
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position: fixed;
   font-size: $menuFontSize;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -59,7 +59,8 @@ header {
 
     a {
       text-decoration: none;
-      color: $gray4;
+      // color: $gray4;
+      color:#0073c9;
       padding: 10px 0.5em;
       border-bottom: 2px solid transparent;
     }
@@ -114,10 +115,8 @@ header {
       width: 33%;
 
       .about-pic-section {
-
-        display:flex;
-        flex-direction:column;
-
+        display: flex;
+        flex-direction: column;
 
         #dev-img {
           border-radius: 33%;
@@ -126,43 +125,41 @@ header {
           width: 70%;
           max-width: 200px;
         }
-        
-        .about-links-section{
-          width:70%;
-          display:flex;
-          justify-content:space-around;
-          padding:10px;
-          opacity:0.9;
+
+        .about-links-section {
+          width: 70%;
+          display: flex;
+          justify-content: space-around;
+          padding: 10px;
+          opacity: 0.9;
         }
       }
     }
     .about-right {
       width: 66%;
       text-align: justify;
-      color:white;
+      color: white;
     }
   }
 }
 
-#portfolio,#contact{
+#portfolio,
+#contact {
   display: flex;
-  flex-flow:column;
-  align-items:center;
+  flex-flow: column;
+  align-items: center;
 }
 
-
 footer {
- background-color:white; 
- height:50px; 
- display:flex;
- justify-content:center;
- align-items:center;
- box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.02);
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.02);
 
-
- a {
-  text-decoration:none;
-  color:$gray4;
-  
- }
+  a {
+    text-decoration: none;
+    color: $gray4;
+  }
 }
