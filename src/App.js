@@ -28,14 +28,12 @@ function App() {
                 </div>
                 <div className="about-links-section">
                   <img id="github" src={GithubLogo} alt="" />
-                  <img id="github" src={LinkedinLogo} alt="" />
+                  <img id="linkedin" src={LinkedinLogo} alt="" />
                 </div>
               </div>
             </div>
             <div className="about-right">
               <div className="about-description">
-
-
                 <p>
                   As a web designer and JavaScript developer, I prioritize the use of clean code, the use of agreed upon syntax conventions,
                   and a commitment to DRY principles. I’m also devoted to using accessibility and responsiveness in my markup and design.
@@ -59,9 +57,19 @@ function App() {
         </section>
         <section id="contact">
           <div className="section-title">contact me</div>
+          <div className="contact-info">
+            <p>Email me at:</p>
+            <p>marcin.p.dev@gmail.com</p>
+          </div>
+          <div className="logos-contact">
+            <img id="github" src={GithubLogo} alt="" />
+            <img id="linkedin" src={LinkedinLogo} alt="" />
+          </div>
         </section>
       </main>
-      <footer>Created by&nbsp;<a href="#">Marcin Pietkiewicz</a></footer>
+      <footer>
+        Created by&nbsp;<a href="#">Marcin Pietkiewicz</a>
+      </footer>
     </div>
   );
 }

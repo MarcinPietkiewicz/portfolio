@@ -35,7 +35,7 @@ header {
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   position: fixed;
   font-size: $menuFontSize;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -60,7 +60,7 @@ header {
     a {
       text-decoration: none;
       // color: $gray4;
-      color:#0073c9;
+      color:#0a60a1;
       padding: 10px 0.5em;
       border-bottom: 2px solid transparent;
     }
@@ -143,11 +143,34 @@ header {
   }
 }
 
-#portfolio,
+#portfolio{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 #contact {
   display: flex;
   flex-flow: column;
   align-items: center;
+
+
+  .contact-info{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    font-size:1.4em;
+  }
+
+  .logos-contact{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    filter: invert(49%) sepia(33%) saturate(2282%) hue-rotate(172deg) brightness(86%) contrast(115%);
+    img {
+      padding:20px;
+    }
+  }
 }
 
 footer {
