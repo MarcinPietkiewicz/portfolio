@@ -7,4 +7,15 @@
     display:grid;
     gap: 25px;
     grid-template-columns: repeat(3, 1fr);
+  
+    .tags {
+      background-color:lightcyan;
+      border-radius:5px;
+    }
+    .tags:hover{
+      background-color:azure;
+    }
+    .selected{
+      background-color:aqua;
+    }
   }

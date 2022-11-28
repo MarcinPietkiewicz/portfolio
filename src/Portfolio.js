@@ -33,6 +33,18 @@ class Portfolio extends React.Component {
 
     return (
       <div id="port">
+        <button className="tags" id="tag-react">REACT</button>
+        <button className="tags" id="tag-js">Javascript</button>
+        <button className="tags" id="tag-python">Python</button>
+        <button className="tags" id="tag-php">PHP</button>
+        <button className="tags" id="tag-p1">Proof-of-concept</button>
+        <button className="tags" id="tag-p2">Simple</button>
+        <button className="tags" id="tag-p3">Medium or bigger</button>
+        <button className="tags" id="tag-p3">Typescript</button>
+        <button className="tags" id="tag-p3">REDUX</button>
+
+
+
         {data.map((element, index) => {
           return <Card key={index} data={element} />;
         })}
