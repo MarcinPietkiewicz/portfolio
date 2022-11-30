@@ -5,20 +5,20 @@ import Card from "./Card";
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { data: "", filters: ["react"] };
+    this.state = { data: "", filters: [] };
     this.handleFilter = this.handleFilter.bind(this);
   }
 
   handleFilter(e) {
+    console.log(this.state.filters);
     let tech = e.target.dataset.tech;
     let arr = this.state.filters;
     console.log("tech = " + tech + ", this.state.filters = " + this.state.filters + ", arr.length = " + arr.length);
     // console.log(arr.some(el => el !== tech));
     if (arr.some((el) => el === tech)) {
-      return this.state;
+      this.setState({filters: this.state.filters.filter(el => el !== tech)})
     } else {
       this.setState({ filters: [...this.state.filters, tech] });
-      console.log(this.state.filters);
     }
     // this.state.filters.some(tech) ? this.setState({filters: this.state.filters.filter(e => e !== tech)}) : this.setState({filters: [...this.state.filters, tech]});
   }
