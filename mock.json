@@ -2,42 +2,42 @@
     "id": "1",
     "project_name": "calculator",
     "project_description":"javascript calculator using react",
-    "tech_stack":["REACT", "Javascript"],
+    "tech_stack":["React", "Javascript"],
     "banner":"none"
 },
 {
     "id": "2",
     "project_name": "focus timer",
     "project_description":"Simple focus timer using react",
-    "tech_stack":["REACT", "Javascript"],
+    "tech_stack":["React", "Javascript"],
     "banner":"none"
 },
 {
     "id": "3",
     "project_name": "drum machine",
     "project_description":"Drum machine with React",
-    "tech_stack":["REACT", "Javascript"],
+    "tech_stack":["React", "Javascript"],
     "banner":"none"
 },
 {
     "id": "4",
     "project_name": "markdown previewer",
     "project_description":"A simple markdown previeweri using marked library",
-    "tech_stack":["REACT", "Javascript", "marked.js"],
+    "tech_stack":["React", "Python"],
     "banner":"none"
 },
 {
     "id": "5",
     "project_name": "markdown previewer",
     "project_description":"A simple markdown previeweri using marked library",
-    "tech_stack":["REACT", "Javascript", "marked.js"],
+    "tech_stack":["PHP", "Javascript"],
     "banner":"none"
 },
 {
     "id": "6",
     "project_name": "markdown previewer",
     "project_description":"A simple markdown previeweri using marked library",
-    "tech_stack":["REACT", "Javascript", "marked.js"],
+    "tech_stack":["React", "Javascript", "SASS"],
     "banner":"none"
 }
 ]

@@ -14,13 +14,13 @@ class Portfolio extends React.Component {
     let tech = e.target.dataset.tech;
     let arr = this.state.filters;
     console.log("tech = " + tech + ", this.state.filters = " + this.state.filters + ", arr.length = " + arr.length);
-    // console.log(arr.some(el => el !== tech));
     if (arr.some((el) => el === tech)) {
+      console.log('removing '+tech);
       this.setState({filters: this.state.filters.filter(el => el !== tech)})
     } else {
+      console.log('adding '+tech);
       this.setState({ filters: [...this.state.filters, tech] });
     }
-    // this.state.filters.some(tech) ? this.setState({filters: this.state.filters.filter(e => e !== tech)}) : this.setState({filters: [...this.state.filters, tech]});
   }
 
   componentDidMount() {
@@ -36,6 +36,13 @@ class Portfolio extends React.Component {
       .catch((err) => console.log("Fetch error" + err));
   }
 
+
+  filterTags(tags, data) {
+return true;
+    }
+
+  
+
   render() {
     let data = [];
 
@@ -48,35 +55,28 @@ class Portfolio extends React.Component {
 
     return (
       <div id="port">
-        <button className="tags" onClick={this.handleFilter} data-tech="react" id="tag-react">
+        <button className="tags" onClick={this.handleFilter} data-tech="React">
           REACT
         </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="javascript" id="tag-js">
+        <button className="tags" onClick={this.handleFilter} data-tech="Javascript" >
           Javascript
         </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="python" id="tag-python">
+        <button className="tags" onClick={this.handleFilter} data-tech="Python" >
           Python
         </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="PHP" id="tag-php">
+        <button className="tags" onClick={this.handleFilter} data-tech="Php" >
           PHP
         </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="poc" id="tag-p1">
-          Proof-of-concept
-        </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="simple" id="tag-p2">
-          Simple
-        </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="medium" id="tag-p3">
-          Medium or bigger
-        </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="typescript" id="tag-p3">
+        <button className="tags" onClick={this.handleFilter} data-tech="Typescript">
           Typescript
         </button>
-        <button className="tags" onClick={this.handleFilter} data-tech="redux" id="tag-p3">
+        <button className="tags" onClick={this.handleFilter} data-tech="Redux">
           REDUX
         </button>
+
+
         {data.map((element, index) => {
-          return <Card key={index} data={element} />;
+          return <Card key={index} data={element}/>;
         })}
       </div>
     );
