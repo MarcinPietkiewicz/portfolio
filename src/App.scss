@@ -80,6 +80,7 @@ header {
   font-family: sans-serif;
   letter-spacing: 0.04em;
   padding: 0px $paddMain;
+  min-height:100vh;
 
   .section-title {
     font-family: Armata, sans-serif;
@@ -151,6 +152,10 @@ header {
 }
 
 #contact {
+
+  background-color:azure;
+  min-height:90vh;
+
   .contact-info {
     display: flex;
     flex-flow: column;

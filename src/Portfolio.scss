@@ -1,21 +1,50 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+#port-flex {
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding:0px;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  flex-flow: column;
+  align-items: center;
 
-#port {
-    // width: 100%;
-    max-width: 800px;
-    display:grid;
-    gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
-  
-    .tags {
-      background-color:lightcyan;
-      border-radius:5px;
+
+  #tags-text {
+    margin: 10px 0px;
+
+  }
+  #tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .tag {
+      border: none;
+      padding: 5px;
+      background-color: azure;
+      border-radius: 5px;
     }
-    .tags:hover{
-      background-color:azure;
+    .tag:hover {
+      background-color: lightblue;
     }
-    .selected{
-      background-color:aqua;
+    .selected {
+      background-color: aqua;
+    }
+    .reset {
+      margin: 10px 0px;
+      background-color: rgb(252, 216, 216);
+      width: 100%;
     }
   }
+}
+
+#port {
+  // width: 100%;
+  max-width: 800px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
