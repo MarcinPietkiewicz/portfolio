@@ -28,14 +28,14 @@
       border-radius: 5px;
     }
     .tag:hover {
-      background-color: lightblue;
+      filter:saturate(200%);
     }
     .selected {
       background-color: aqua;
     }
     .reset {
       margin: 10px 0px;
-      background-color: rgb(252, 216, 216);
+      background-color: rgb(250, 231, 231);
       width: 100%;
     }
   }

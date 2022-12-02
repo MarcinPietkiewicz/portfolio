@@ -7,12 +7,16 @@ class Portfolio extends React.Component {
     super(props);
     this.state = { data: "", filters: [] };
     this.handleFilter = this.handleFilter.bind(this);
-    // this.filterTags = this.filterTags.bind(this);
   }
 
   handleFilter(e) {
     if (e.target.dataset.tech === "RESET") {
       this.setState({ filters: [] });
+      let activeTags = Array.from(document.getElementsByClassName('tag selected'));
+      console.log(activeTags);
+      activeTags.forEach(element => {
+        element.classList.remove('selected')
+      })
       return;
     }
     let tech = e.target.dataset.tech;
@@ -20,8 +24,10 @@ class Portfolio extends React.Component {
 
     if (arr.some((el) => el === tech)) {
       this.setState({ filters: this.state.filters.filter((el) => el !== tech) });
+      e.target.classList.remove("selected");
     } else {
       this.setState({ filters: [...this.state.filters, tech] });
+      e.target.classList.add("selected");
     }
   }
 
@@ -39,7 +45,6 @@ class Portfolio extends React.Component {
   }
 
   filterTags(tags, data) {
-    console.log(tags, data);
     tags.forEach((tag) => {
       data = data.filter((element) => element.tech_stack.some((el) => el === tag));
     });
@@ -50,7 +55,6 @@ class Portfolio extends React.Component {
     let data = [];
 
     if (this.state.data !== "") {
-      console.log(this.state.filters, this.state.data);
       this.filterTags(this.state.filters, this.state.data).map((project) => {
         data.push([project.id, project.project_name, project.project_description, project.tech_stack, project.banner]);
         return data;
