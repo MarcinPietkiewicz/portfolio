@@ -1,28 +1,30 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$breakpoints: (
+  phone: 640px,
+  tablet: 768px,
+  desktop: 1024px
+) !default;
+
 #port-flex {
-  background-color:rgb(253, 253, 253);
+  background-color: rgb(253, 253, 253);
   border-radius: 20px;
-  margin:20px 0px;
+  margin: 20px 0px;
   display: flex;
   width: 100%;
-  padding:10px 20px;
+  padding: 10px 20px;
   max-width: 800px;
   flex-flow: column;
   align-items: center;
-  user-select:none;
-
-
+  user-select: none;
 
   #tags-text {
     margin: 10px 0px 15px 0px;
-    opacity:0.7;
-    font-size:1.1em;
-
-
+    opacity: 0.7;
+    font-size: 1.1em;
   }
   #tags {
-    width:100%;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -30,32 +32,48 @@
     .tag {
       border: 1px solid rgb(0, 207, 207);
       padding: 10px 20px;
+      margin: 8px 0px;
       background-color: azure;
       border-radius: 5px;
-      color:rgb(0, 161, 161);
+      color: rgb(0, 161, 161);
     }
     .tag:hover {
-      filter:saturate(300%);
+      filter: saturate(300%);
     }
     .selected {
-      filter:saturate(600%);
-      color:rgb(0,77,77);
+      filter: saturate(600%);
+      color: rgb(0, 77, 77);
     }
     .reset {
       margin: 10px 0px;
       background-color: rgb(250, 231, 231);
       width: 100%;
-      border:none;
-      color:rgb(255, 107, 107);
+      border: none;
+      color: rgb(255, 107, 107);
     }
-
   }
 }
 
 #port {
-  // width: 100%;
   max-width: 800px;
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(3, 1fr);
 }
+
+@media(min-width: 769px) and (max-width: 1024px) {
+  #port {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+
+@media(max-width: 768px){
+  #port {
+    grid-template-columns: 1fr;
+    gap:10px;
+  }
+}
+
+
