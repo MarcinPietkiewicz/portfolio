@@ -12,10 +12,10 @@ class Portfolio extends React.Component {
   handleFilter(e) {
     if (e.target.dataset.tech === "RESET") {
       this.setState({ filters: [] });
-      let activeTags = Array.from(document.getElementsByClassName('tag selected'));
-      activeTags.forEach(element => {
-        element.classList.remove('selected')
-      })
+      let activeTags = Array.from(document.getElementsByClassName("tag selected"));
+      activeTags.forEach((element) => {
+        element.classList.remove("selected");
+      });
       return;
     }
     let tech = e.target.dataset.tech;
@@ -63,31 +63,29 @@ class Portfolio extends React.Component {
     return (
       <React.Fragment>
         <div id="port-flex">
-          <div id="tags-text">
-          Select one or more project tags
-          </div>
-        <div id="tags">
-          <button className="tag" onClick={this.handleFilter} data-tech="React">
-            REACT
-          </button>
-          <button className="tag" onClick={this.handleFilter} data-tech="Javascript">
-            Javascript
-          </button>
-          <button className="tag" onClick={this.handleFilter} data-tech="Python">
-            Python
-          </button>
-          <button className="tag" onClick={this.handleFilter} data-tech="Php">
-            PHP
-          </button>
-          <button className="tag" onClick={this.handleFilter} data-tech="Typescript">
-            Typescript
-          </button>
-          <button className="tag" onClick={this.handleFilter} data-tech="Redux">
-            REDUX
-          </button>
-          <button className="tag reset" onClick={this.handleFilter} data-tech="RESET">
-            Reset all tags
-          </button>
+          <div id="tags-text">Select one or more project tags</div>
+          <div id="tags">
+            <button className="tag" onClick={this.handleFilter} data-tech="React">
+              React
+            </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Javascript">
+              Javascript
+            </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Python">
+              Python
+            </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Php">
+              PHP
+            </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Typescript">
+              Typescript
+            </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Redux">
+              Redux
+            </button>
+            <button className="tag reset" onClick={this.handleFilter} data-tech="RESET">
+              Reset all tags
+            </button>
           </div>
         </div>
         <div id="port">

@@ -1,12 +1,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 #port-flex {
-  background-color: white;
-  border-radius: 5px;
-  margin: 20px 0px;
-  padding:0px;
+  background-color:rgb(253, 253, 253);
+  border-radius: 20px;
+  margin:20px 0px;
   display: flex;
   width: 100%;
+  padding:10px 20px;
   max-width: 800px;
   flex-flow: column;
   align-items: center;
@@ -15,30 +15,38 @@
 
 
   #tags-text {
-    margin: 10px 0px;
+    margin: 10px 0px 15px 0px;
+    opacity:0.7;
+    font-size:1.1em;
+
 
   }
   #tags {
+    width:100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .tag {
-      border: none;
-      padding: 5px;
+      border: 1px solid rgb(0, 207, 207);
+      padding: 10px 20px;
       background-color: azure;
       border-radius: 5px;
+      color:rgb(0, 161, 161);
     }
     .tag:hover {
       filter:saturate(300%);
     }
     .selected {
       filter:saturate(600%);
+      color:rgb(0,77,77);
     }
     .reset {
       margin: 10px 0px;
       background-color: rgb(250, 231, 231);
       width: 100%;
+      border:none;
+      color:rgb(255, 107, 107);
     }
 
   }
