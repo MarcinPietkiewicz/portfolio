@@ -13,7 +13,6 @@ class Portfolio extends React.Component {
     if (e.target.dataset.tech === "RESET") {
       this.setState({ filters: [] });
       let activeTags = Array.from(document.getElementsByClassName('tag selected'));
-      console.log(activeTags);
       activeTags.forEach(element => {
         element.classList.remove('selected')
       })

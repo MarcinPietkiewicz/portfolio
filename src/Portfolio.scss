@@ -10,6 +10,8 @@
   max-width: 800px;
   flex-flow: column;
   align-items: center;
+  user-select:none;
+
 
 
   #tags-text {
@@ -28,16 +30,17 @@
       border-radius: 5px;
     }
     .tag:hover {
-      filter:saturate(200%);
+      filter:saturate(300%);
     }
     .selected {
-      background-color: aqua;
+      filter:saturate(600%);
     }
     .reset {
       margin: 10px 0px;
       background-color: rgb(250, 231, 231);
       width: 100%;
     }
+
   }
 }
 
