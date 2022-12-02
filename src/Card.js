@@ -2,9 +2,6 @@ import React from "react";
 import "./Card.scss";
 
 class Card extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

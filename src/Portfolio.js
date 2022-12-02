@@ -7,13 +7,19 @@ class Portfolio extends React.Component {
     super(props);
     this.state = { data: "", filters: [] };
     this.handleFilter = this.handleFilter.bind(this);
+    this.filterTags = this.filterTags.bind(this);
   }
 
   handleFilter(e) {
+    if (e.target.dataset.tech === "RESET") {
+      this.setState({filters: []});
+      return;
+    }
     console.log(this.state.filters);
     let tech = e.target.dataset.tech;
     let arr = this.state.filters;
     console.log("tech = " + tech + ", this.state.filters = " + this.state.filters + ", arr.length = " + arr.length);
+
     if (arr.some((el) => el === tech)) {
       console.log('removing '+tech);
       this.setState({filters: this.state.filters.filter(el => el !== tech)})
@@ -38,7 +44,12 @@ class Portfolio extends React.Component {
 
 
   filterTags(tags, data) {
-return true;
+    console.log(tags, data);
+      tags.forEach(tag => {
+        data = data.filter(element => element.tech_stack.some(el => el === tag))
+      }
+      )
+      return data;
     }
 
   
@@ -47,7 +58,8 @@ return true;
     let data = [];
 
     if (this.state.data !== "") {
-      this.state.data.map((project) => {
+      console.log(this.state.filters, this.state.data);
+      this.filterTags(this.state.filters, this.state.data).map((project) => {
         data.push([project.id, project.project_name, project.project_description, project.tech_stack, project.banner]);
         return data;
       });
@@ -72,6 +84,9 @@ return true;
         </button>
         <button className="tags" onClick={this.handleFilter} data-tech="Redux">
           REDUX
+        </button>
+        <button className='reset' onClick={this.handleFilter} data-tech="RESET">
+          RESET TAGS
         </button>
 
 
