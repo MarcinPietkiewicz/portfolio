@@ -2,7 +2,7 @@
     "id": "1",
     "project_name": "Radosław Sobczak",
     "project_description":"An artist website with RWD design using PHP to login and change content (uses no database)",
-    "tech_stack":["Javascript", "PHP"],
+    "tech_stack":["Javascript", "Php"],
     "banner":"./assets/radoslaw.png",
     "link":"http://www.radoslawsobczak.com",
     "git_link":"https://github.com/MarcinPietkiewicz/radoslaw-sobczak"
@@ -11,7 +11,7 @@
     "id": "2",
     "project_name": "Farmer Olaf",
     "project_description":"A product webpage with multilanguage and prestashop",
-    "tech_stack":["React", "Javascript", "PHP"],
+    "tech_stack":["React", "Javascript", "Php"],
     "banner":"./assets/farmerolaf.png",
     "link":"http://www.farmerolaf.com",
     "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
@@ -20,7 +20,7 @@
     "id": "3",
     "project_name": "Hubert Rutkowski",
     "project_description":"An artist website with RWD design using PHP to login and change content.",
-    "tech_stack":["Javascript", "PHP"],
+    "tech_stack":["Javascript", "Php"],
     "banner":"./assets/hubert.png",
     "link":"http://www.hubertrutkowski.com",
     "git_link":""
@@ -29,7 +29,7 @@
     "id": "4",
     "project_name": "Adam Trekowski",
     "project_description":"A adventurer website using REACT",
-    "tech_stack":["React", "Javascript", "PHP"],
+    "tech_stack":["React", "Javascript", "Php"],
     "banner":"./asseets/adam.png",
     "link":"http://www.farmerolaf.com/adam",
     "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
