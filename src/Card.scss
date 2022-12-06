@@ -1,8 +1,22 @@
 .card {
     box-sizing: border-box;
-    border-radius:5px;
-    height:300px;
+    border-radius:10px;
     border:none;
     box-shadow: 5px 5px 15px 0px rgba(66, 68, 90, 0.1);
-    padding:10px 20px;
+}
+
+.project-photo {
+    max-height:20em;
+    img {
+        border-radius: 10px 10px 0px 0px;
+        width:100%;
+        object-fit:cover;
+
+    }
+}
+
+.project-hero {
+    padding:1em;
+    background-color:white;
+    border-radius: 0px 0px 10px 10px;
 }

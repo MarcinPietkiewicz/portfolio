@@ -1,11 +1,14 @@
 import React from "react";
 import "./Card.scss";
+import thumb from "./assets/adam.png";
 
 class Card extends React.Component {
   render() {
     return (
       <div className="card" key={this.props.data}>
-        <div className="project-photo">photo here...</div>
+        <div className="project-photo">
+          <img src={thumb} alt="pic" />
+          </div>
         <div className="project-hero">
           <div className="project-title">{this.props.data[1]}</div>
           <div className="project-description">{this.props.data[2]}</div>
