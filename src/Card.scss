@@ -19,4 +19,25 @@
     padding:1em;
     background-color:white;
     border-radius: 0px 0px 10px 10px;
+
+    .project-title {
+        font-weight:900;
+        font-size:110%;
+        margin-bottom:0.5em;
+    }
+    .project-description {
+        font-size:80%;
+        margin-bottom:0.5em;
+    }
+    .project-techs{
+        display:flex;
+        flex-flow:row;
+        justify-content:space-around;
+    }
+    .project-links{
+        display:flex;
+        flex-flow:row;
+        justify-content:space-around;
+    }
+    
 }
