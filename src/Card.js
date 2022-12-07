@@ -17,7 +17,7 @@ class Card extends React.Component {
           <hr />
           <div className="project-links">
             <div className="project-demo">
-              <a href={this.props.data[4]}>Demo</a>
+              <a href={this.props.data[5]}>Demo</a>
             </div>
             <div className="project-github">
               <a href={this.props.data[4]}>Code</a>

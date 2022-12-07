@@ -4,7 +4,7 @@
     "project_description":"An artist website with RWD design using PHP to login and change content (uses no database)",
     "tech_stack":["Javascript", "Php"],
     "banner":"../images/radoslaw.png",
-    "link":"http://www.radoslawsobczak.com",
+    "demo_link":"http://www.radoslawsobczak.com",
     "git_link":"https://github.com/MarcinPietkiewicz/radoslaw-sobczak"
 },
 {
@@ -13,7 +13,7 @@
     "project_description":"A product webpage with multilanguage and prestashop",
     "tech_stack":["React", "Javascript", "Php"],
     "banner":"../images/farmerolaf.png",
-    "link":"http://www.farmerolaf.com",
+    "demo_link":"http://www.farmerolaf.com",
     "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
 },
 {
@@ -22,7 +22,7 @@
     "project_description":"An artist website with RWD design using PHP to login and change content.",
     "tech_stack":["Javascript", "Php"],
     "banner":"../images/hubert.png",
-    "link":"http://www.hubertrutkowski.com",
+    "demo_link":"http://www.hubertrutkowski.com",
     "git_link":""
 },
 {
@@ -31,7 +31,7 @@
     "project_description":"A adventurer website using REACT",
     "tech_stack":["React", "Javascript", "Php"],
     "banner":"../images/adam.png",
-    "link":"http://www.farmerolaf.com/adam",
+    "demo_link":"http://www.farmerolaf.com/adam",
     "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
 },
 {
@@ -40,7 +40,7 @@
     "project_description":"A simple tool to view most popoular repos on github and compare two",
     "tech_stack":["Javascript", "React"],
     "banner":"../images/compare.png",
-    "link":"https://marcinpietkiewicz.github.io/",
+    "demo_link":"https://marcinpietkiewicz.github.io/",
     "git_link":"https://github.com/MarcinPietkiewicz/github-compare"
 },
 {
@@ -49,7 +49,7 @@
     "project_description":"A simple calculator with memory based on REACT",
     "tech_stack":["React", "Javascript"],
     "banner":"../images/calculator.png",
-    "link":"https://marcinpietkiewicz.github.io/javascript-calculator/",
+    "demo_link":"https://marcinpietkiewicz.github.io/javascript-calculator/",
     "git_link":"https://github.com/MarcinPietkiewicz/javascript-calculator"
 }
 ]

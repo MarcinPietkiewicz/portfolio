@@ -55,7 +55,7 @@ class Portfolio extends React.Component {
 
     if (this.state.data !== "") {
       this.filterTags(this.state.filters, this.state.data).map((project) => {
-        data.push([project.id, project.project_name, project.project_description, project.tech_stack, project.banner]);
+        data.push([project.id, project.project_name, project.project_description, project.tech_stack, project.banner, project.demo_link, project.git_link]);
         return data;
       });
     }
