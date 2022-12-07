@@ -4,6 +4,9 @@ import "./Card.scss";
 class Card extends React.Component {
   render() {
     console.log(this.props.data);
+
+    
+
     let image_path = this.props.data[4];
     return (
       <div className="card" key={this.props.data[0]}>
@@ -13,7 +16,7 @@ class Card extends React.Component {
         <div className="project-hero">
           <div className="project-title">{this.props.data[1]}</div>
           <div className="project-description">{this.props.data[2]}</div>
-          <div className="project-techs">{this.props.data[3]}</div>
+          <div className="project-techs">{this.props.data[3].map((tag,index) => <li key={index}>{tag}</li>)}</div>
           <hr />
           <div className="project-links">
             <div className="project-demo">

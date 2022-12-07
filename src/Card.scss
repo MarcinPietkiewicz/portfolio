@@ -3,6 +3,7 @@
     border-radius:10px;
     border:none;
     box-shadow: 5px 5px 15px 0px rgba(66, 68, 90, 0.1);
+    user-select:none;
 }
 
 .project-photo {
@@ -27,12 +28,22 @@
     }
     .project-description {
         font-size:80%;
-        margin-bottom:0.5em;
+        margin-bottom:1em;
     }
     .project-techs{
         display:flex;
         flex-flow:row;
         justify-content:space-around;
+        li{
+            list-style:none;
+            font-size:80%;
+            border:1px solid rgb(0, 207, 207);
+            padding:2px 5px;
+            border-radius:6px;
+            background-color:azure;
+            color:rgb(0,161,161);
+            user-select:none;
+        }
     }
     .project-links{
         display:flex;
