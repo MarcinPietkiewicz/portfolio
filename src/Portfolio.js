@@ -1,6 +1,7 @@
 import React from "react";
 import "./Portfolio.scss";
 import Card from "./Card";
+import { motion, AnimatePresence } from "framer-motion";
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -55,7 +56,15 @@ class Portfolio extends React.Component {
 
     if (this.state.data !== "") {
       this.filterTags(this.state.filters, this.state.data).map((project) => {
-        data.push([project.id, project.project_name, project.project_description, project.tech_stack, project.banner, project.demo_link, project.git_link]);
+        data.push([
+          project.id,
+          project.project_name,
+          project.project_description,
+          project.tech_stack,
+          project.banner,
+          project.demo_link,
+          project.git_link,
+        ]);
         return data;
       });
     }
@@ -88,11 +97,14 @@ class Portfolio extends React.Component {
             </button>
           </div>
         </div>
-        <div id="port">
-          {data.map((element, index) => {
-            return <Card key={index} data={element} />;
-          })}
-        </div>
+
+        <motion.div layout id="port">
+          <AnimatePresence>
+            {data.map((element, index) => {
+              return <Card key={index} data={element} />;
+            })}
+          </AnimatePresence>
+        </motion.div>
       </React.Fragment>
     );
   }

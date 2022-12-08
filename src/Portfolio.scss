@@ -36,11 +36,11 @@ $breakpoints: (
       background-color: azure;
       border-radius: 5px;
       color: rgb(0, 161, 161);
-      transition:0.5s;
+      transition: filter 0.5s;
     }
     .tag:hover {
       filter: saturate(200%);
-      transition:0.5s;
+      transition: filter 0.5s;
     }
     .selected {
       filter: saturate(500%);
@@ -48,10 +48,8 @@ $breakpoints: (
     }
     .reset {
       margin: 10px 0px;
-      // background-color: rgb(250, 231, 231);
       width: 100%;
       border: none;
-      // color: rgb(255, 107, 107);
     }
   }
 }

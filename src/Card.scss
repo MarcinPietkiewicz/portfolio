@@ -4,6 +4,7 @@
   border: none;
   box-shadow: 5px 5px 15px 0px rgba(66, 68, 90, 0.1);
   user-select: none;
+  height:450px;
 }
 
 .project-photo {
@@ -63,12 +64,12 @@
         text-decoration: none;
         img {
           opacity: 0.4;
-          transition: 0.5s;
+          transition: opacity 0.5s;
         }
 
         img:hover {
           opacity: 0.8;
-          transition: 0.5s;
+          transition: opacity 0.5s;
         }
       }
     }

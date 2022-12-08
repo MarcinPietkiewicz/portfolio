@@ -2,6 +2,8 @@ import React from "react";
 import "./Card.scss";
 import DemoLogo from "./assets/demo.svg";
 import CodeLogo from "./assets/code.svg";
+import {motion} from "framer-motion";
+
 
 class Card extends React.Component {
   render() {
@@ -9,6 +11,7 @@ class Card extends React.Component {
 
     let image_path = this.props.data[4];
     return (
+      <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{opacity: 0}} layout>
       <div className="card" key={this.props.data[0]}>
         <div className="project-photo">
           <img src={image_path} alt="pic" />
@@ -38,6 +41,7 @@ class Card extends React.Component {
           </div>
         </div>
       </div>
+      </motion.div>
     );
   }
 }
