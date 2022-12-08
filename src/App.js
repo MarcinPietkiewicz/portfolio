@@ -27,8 +27,12 @@ function App() {
                   <img id="dev-img" src={require("./assets/marcin.jpg")} alt="" />
                 </div>
                 <div className="about-links-section">
-                  <img id="github" src={GithubLogo} alt="" />
-                  <img id="linkedin" src={LinkedinLogo} alt="" />
+                  <a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">
+                    <img id="github" src={GithubLogo} alt="" />
+                  </a>
+                  <a href="http://www.linkedin.com/in/marcin-pietkiewicz/" target="_blank" rel="noreferrer">
+                    <img id="linkedin" src={LinkedinLogo} alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -57,18 +61,19 @@ function App() {
         </section>
         <section id="contact">
           <div className="section-title">contact me</div>
-          <div className="contact-info">
-            <p>Email me at:</p>
-            <p>marcin.p.dev@gmail.com</p>
-          </div>
+
           <div className="logos-contact">
-            <img id="github" src={GithubLogo} alt="" />
-            <img id="linkedin" src={LinkedinLogo} alt="" />
+            <a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">
+              <img id="github" src={GithubLogo} alt="" />
+            </a>
+            <a href="http://www.linkedin.com/in/marcin-pietkiewicz/" target="_blank" rel="noreferrer">
+              <img id="linkedin" src={LinkedinLogo} alt="" />
+            </a>
           </div>
         </section>
       </main>
       <footer>
-        Created by&nbsp;<a href="#">Marcin Pietkiewicz</a>
+        Created by&nbsp;<a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">Marcin Pietkiewicz</a>
       </footer>
     </div>
   );

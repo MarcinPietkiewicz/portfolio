@@ -97,12 +97,13 @@ class Portfolio extends React.Component {
             </button>
           </div>
         </div>
-
+        
         <motion.div layout id="port">
           <AnimatePresence>
-            {data.map((element, index) => {
-              return <Card key={index} data={element} />;
-            })}
+          {data.map((element, index) => {
+            return <Card key={index} data={element} />;
+            
+          })}
           </AnimatePresence>
         </motion.div>
       </React.Fragment>

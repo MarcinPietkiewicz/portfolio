@@ -155,13 +155,8 @@ header {
 
   background-color:azure;
   min-height:90vh;
-
-  .contact-info {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    font-size: 1.4em;
-  }
+  display: flex;
+  justify-content:flex-start;
 
   .logos-contact {
     display: flex;
