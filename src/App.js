@@ -61,7 +61,6 @@ function App() {
         </section>
         <section id="contact">
           <div className="section-title">contact me</div>
-
           <div className="logos-contact">
             <a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">
               <img id="github" src={GithubLogo} alt="" />
@@ -73,7 +72,10 @@ function App() {
         </section>
       </main>
       <footer>
-        Created by&nbsp;<a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">Marcin Pietkiewicz</a>
+        Created by&nbsp;
+        <a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">
+          Marcin Pietkiewicz
+        </a>
       </footer>
     </div>
   );
