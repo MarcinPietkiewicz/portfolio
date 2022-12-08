@@ -1,5 +1,7 @@
 import React from "react";
 import "./Card.scss";
+import DemoLogo from './assets/demo.svg';
+import CodeLogo from './assets/code.svg';
 
 class Card extends React.Component {
   render() {
@@ -20,10 +22,11 @@ class Card extends React.Component {
           <hr />
           <div className="project-links">
             <div className="project-demo">
-              <a href={this.props.data[5]} target="_blank">Demo</a>
+              <a href={this.props.data[5]} target="_blank" rel="noreferrer"><img src={DemoLogo} height="50px"/></a>
+
             </div>
             <div className="project-github">
-              <a href={this.props.data[6]} target="_blank">Code</a>
+              <a href={this.props.data[6]} target="_blank" rel="noreferrer"><img src={CodeLogo} height="50px"/></a>
             </div>
           </div>
         </div>
