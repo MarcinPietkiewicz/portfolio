@@ -81,13 +81,27 @@ header {
   font-size: 2em;
   letter-spacing: 0.07em;
   color: rgba(0, 0, 0, 0.7);
-  padding: 2em 0em;
+  padding: 1.5em 0em;
 }
 
 .white {
   color: white !important;
 }
 
+#about,
+#portfolio,
+#contact {
+  padding: 10%;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#portfolio {
+  padding: 3% 10%;
+}
 #about {
   padding-top: $menuOffset;
   display: flex;
@@ -151,20 +165,12 @@ header {
   }
 }
 
-#about,
-#portfolio,
-#contact {
-  padding: 10%;
-  font-family: sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
+
 
 #contact {
   background-color: azure;
   justify-content: center;
+  min-height:95vh;
   .logos-contact {
     padding-top: 160px;
     display: flex;

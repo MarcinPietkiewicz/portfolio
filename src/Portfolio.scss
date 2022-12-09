@@ -1,11 +1,3 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-$breakpoints: (
-  phone: 640px,
-  tablet: 768px,
-  desktop: 1024px
-) !default;
-
 #port-flex {
   background-color: rgb(253, 253, 253);
   border-radius: 20px;
@@ -64,7 +56,6 @@ $breakpoints: (
 @media(min-width: 769px) and (max-width: 1024px) {
   #port {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
   }
 }
 
@@ -72,7 +63,6 @@ $breakpoints: (
 @media(max-width: 768px){
   #port {
     grid-template-columns: 1fr;
-    gap:10px;
   }
 }
 
