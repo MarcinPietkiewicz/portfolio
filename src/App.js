@@ -39,18 +39,13 @@ function App() {
             <div className="about-right">
               <div className="about-description">
                 <p>
-                  As a web designer and JavaScript developer, I prioritize the use of clean code, the use of agreed upon syntax conventions,
-                  and a commitment to DRY principles. I’m also devoted to using accessibility and responsiveness in my markup and design.
-                  It’s not enough for me just to make something work. It's important to understand what I have made. Does it work
-                  effectively? Can I easily apply this process to a future project? Have I considered every scenario?
+                  As a web designer and Frontend React developer. I prioritize the use of clean code, design patterns and a commitment to DRY principles. I’m also devoted to using accessibility and responsiveness in my markup and design. Other than that, I spend my spare time building upon my development skills and creating my own personal projects.
                 </p>
 
                 <p>
-                  Making my contributions count motivates me more than anything. Other than that, I spend my spare time building upon my
-                  development skills and creating my own personal projects. I also enjoy watching PBS documentaries and doing lots of
-                  reading, whether it be nonfiction, novels, memoirs, or comic books. Additionally, I enjoy going outdoors for a relaxing
-                  swim or bike ride.
+                   I enjoy detective books, playing and designing board games and watching Scott Manley. From time to time I enjoy going outdoors for a relaxing walk, jog or a bike ride.
                 </p>
+
               </div>
             </div>
           </div>
