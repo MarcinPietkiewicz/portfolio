@@ -7,6 +7,7 @@ $gray1: #eee;
 $gray3: #999;
 $gray4: #333;
 $gray5: #111;
+$blue: #0a60a1;
 $paddMenu: 10px;
 $paddMain: 15%;
 $menuOffset: 50px;
@@ -58,15 +59,18 @@ header {
     justify-content: space-around;
 
     a {
+      box-sizing:content-box;
       text-decoration: none;
-      color: #0a60a1;
+      color: $blue;
       padding: 10px 0.5em;
+      margin-bottom:3px;
       transition: $time color, text-shadow;
+      border-bottom: 2px solid white;
     }
 
     a:hover {
-      color: $gray5;
-      border-bottom: 2px solid $gray3;
+      color: $gray4;
+      border-bottom: 2px solid $blue;
       transition: $time;
       text-shadow: 1px 1px #eee;
     }
