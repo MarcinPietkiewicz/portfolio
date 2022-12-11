@@ -59,11 +59,11 @@ header {
     justify-content: space-around;
 
     a {
-      box-sizing:content-box;
+      box-sizing: content-box;
       text-decoration: none;
       color: $blue;
       padding: 10px 0.5em;
-      margin-bottom:3px;
+      margin-bottom: 3px;
       transition: $time color, text-shadow;
       border-bottom: 2px solid white;
     }
@@ -169,31 +169,24 @@ header {
   }
 }
 
-
-
 #contact {
   background-color: azure;
   justify-content: center;
-  min-height:95vh;
+  min-height: 95vh;
   .logos-contact {
-    padding-top: 160px;
     display: flex;
     width: 100%;
     justify-content: center;
-    position:absolute;
-    filter: invert(49%) sepia(33%) saturate(2282%) hue-rotate(172deg) brightness(86%) contrast(115%);
     img {
       padding: 20px;
       width: 100px;
       height: 100px;
+      filter: invert(49%) sepia(33%) saturate(2282%) hue-rotate(172deg) brightness(86%) contrast(115%);
       transition: $time;
     }
     img:hover {
-      width: 105px;
-      height: 105px;
+      filter: grayscale(48%) sepia(88%) invert(90%);
     }
-
-
   }
 }
 footer {

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Portfolio from "./Portfolio.js";
+import Codewars from "./Codewars.js";
 import GithubLogo from "./assets/github.svg";
 import LinkedinLogo from "./assets/linkedin.svg";
 
@@ -39,13 +40,15 @@ function App() {
             <div className="about-right">
               <div className="about-description">
                 <p>
-                  As a web designer and Frontend React developer. I prioritize the use of clean code, design patterns and a commitment to DRY principles. I’m also devoted to using accessibility and responsiveness in my markup and design. Other than that, I spend my spare time building upon my development skills and creating my own personal projects.
+                  As a web designer and Frontend React developer. I prioritize the use of clean code, design patterns and a commitment to
+                  DRY principles. I’m also devoted to using accessibility and responsiveness in my markup and design. Other than that, I
+                  spend my spare time building upon my development skills and creating my own personal projects.
                 </p>
 
                 <p>
-                   I enjoy detective books, playing and designing board games and watching Scott Manley. From time to time I enjoy going outdoors for a relaxing walk, jog or a bike ride.
+                  I enjoy detective books, playing and designing board games and watching Scott Manley. From time to time I enjoy going
+                  outdoors for a relaxing walk, jog or a bike ride.
                 </p>
-
               </div>
             </div>
           </div>
@@ -56,6 +59,7 @@ function App() {
         </section>
         <section id="contact">
           <div className="section-title">contact me</div>
+          <Codewars />
           <div className="logos-contact">
             <a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">
               <img id="github" src={GithubLogo} alt="" />
