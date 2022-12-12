@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
   }
 
   fetchProjects() {
-    fetch("http://localhost:3000/db")
+    fetch('https://marcinpietkiewicz.github.io/portfolio/data/mock.json')
       .then((response) => response.json())
       .then((result) => {
         this.setState({ data: result.projects });
