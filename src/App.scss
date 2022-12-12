@@ -8,6 +8,7 @@ $gray3: #999;
 $gray4: #333;
 $gray5: #111;
 $blue: #0a60a1;
+$lighterBlue: #1680c1;
 $paddMenu: 10px;
 $paddMain: 15%;
 $menuOffset: 50px;
@@ -173,12 +174,38 @@ header {
   background-color: azure;
   justify-content: center;
   min-height: 95vh;
+
+  .codewars-sign {
+    font-size: 2.5em;
+    color: $lighterBlue;
+    font-weight: 900;
+    margin-bottom: -18px;
+  }
+
+  .codewars-element {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: $lighterBlue;
+    color: white;
+    justify-content: center;
+    box-shadow: 5px 5px 15px 0px rgba(66, 68, 90, 0.2);
+
+    .bold {
+      font-weight: 900;
+    }
+  }
+
   .logos-contact {
-    background-color:#1680c1;
-    border-radius:20px;
+    background-color: $lighterBlue;
+    border-radius: 20px;
     display: flex;
     width: 160px;
     justify-content: center;
+    box-shadow: 5px 5px 15px 0px rgba(66, 68, 90, 0.2);
+
     img {
       padding: 20px;
       width: 80px;
@@ -191,6 +218,7 @@ header {
     }
   }
 }
+
 footer {
   background-color: white;
   height: 50px;
