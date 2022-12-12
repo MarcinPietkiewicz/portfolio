@@ -174,18 +174,20 @@ header {
   justify-content: center;
   min-height: 95vh;
   .logos-contact {
+    background-color:#1680c1;
+    border-radius:20px;
     display: flex;
-    width: 100%;
+    width: 160px;
     justify-content: center;
     img {
       padding: 20px;
-      width: 100px;
-      height: 100px;
-      filter: invert(49%) sepia(33%) saturate(2282%) hue-rotate(172deg) brightness(86%) contrast(115%);
+      width: 80px;
+      height: 80px;
+      // filter: invert(49%) sepia(33%) saturate(2282%) hue-rotate(172deg) brightness(86%) contrast(115%);
       transition: $time;
     }
     img:hover {
-      filter: grayscale(48%) sepia(88%) invert(90%);
+      filter: grayscale(48%) sepia(88%) invert(60%);
     }
   }
 }

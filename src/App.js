@@ -58,8 +58,8 @@ function App() {
           <Portfolio />
         </section>
         <section id="contact">
-          <div className="section-title">contact me</div>
           <Codewars />
+          <div className="section-title">contact me</div>
           <div className="logos-contact">
             <a href="https://github.com/MarcinPietkiewicz/" target="_blank" rel="noreferrer">
               <img id="github" src={GithubLogo} alt="" />
