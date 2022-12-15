@@ -14,7 +14,7 @@ function App() {
           <div id="right-menu">
             <a href="#about">about</a>
             <a href="#portfolio">portfolio</a>
-            <a href="#contact">contact</a>
+            <a href="#contact">codewars</a>
           </div>
         </div>
       </header>
