@@ -89,6 +89,9 @@ class Portfolio extends React.Component {
             <button className="tag" onClick={this.handleFilter} data-tech="Api">
               API
             </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Typescript">
+              Typescript
+            </button>
             <button className="tag reset" onClick={this.handleFilter} data-tech="RESET">
               Reset all tags
             </button>
