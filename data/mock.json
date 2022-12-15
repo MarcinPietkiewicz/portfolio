@@ -32,7 +32,7 @@
     "tech_stack":["Javascript", "Php", "Rwd"],
     "banner":"../portfolio/images/adam.png",
     "demo_link":"http://www.farmerolaf.com/adam",
-    "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
+    "git_link":"https://github.com/MarcinPietkiewicz/react-travel"
 },
 {
     "id": "5",
@@ -76,7 +76,7 @@
     "project_description":"Simple graphical weather app based on search bar.",
     "tech_stack":["Javascript", "Api"],
     "banner":"../portfolio/images/weather.png",
-    "demo_link":"https://https://marcinpietkiewicz.github.io/weather-app/",
+    "demo_link":"https://marcinpietkiewicz.github.io/weather-app/",
     "git_link":"https://github.com/MarcinPietkiewicz/weather-app"
 },
 {
@@ -85,7 +85,7 @@
     "project_description":"Javascript based to-do list app.",
     "tech_stack":["Javascript"],
     "banner":"../portfolio/images/todo.png",
-    "demo_link":"https://https://marcinpietkiewicz.github.io/ToDoList/",
+    "demo_link":"https://marcinpietkiewicz.github.io/ToDoList/",
     "git_link":"https://github.com/MarcinPietkiewicz/ToDoList"
 },
 {
@@ -103,16 +103,16 @@
     "project_description":"Website with background and css stylized as a museum interior. Rwd design.",
     "tech_stack":["Rwd"],
     "banner":"../portfolio/images/leszetycki.png",
-    "demo_link":"https://leszetycki.org/",
+    "demo_link":"http://leszetycki.org/",
     "git_link":""
 },
 {
     "id": "14",
-    "project_name": "Strona konkursu pianistycznego",
+    "project_name": "German Piano Competition website",
     "project_description":"A piano competition website with photo gallery and rwd design",
     "tech_stack":["Rwd", "Php"],
     "banner":"../portfolio/images/leschetizky.png",
-    "demo_link":"https://leschetizky.eu/",
+    "demo_link":"http://leschetizky.eu/",
     "git_link":""
 }
 ]
