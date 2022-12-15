@@ -14,7 +14,7 @@
     "tech_stack":["Javascript", "Rwd"],
     "banner":"../portfolio/images/farmerolaf.png",
     "demo_link":"http://www.farmerolaf.com",
-    "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
+    "git_link":""
 },
 {
     "id": "3",
@@ -29,7 +29,7 @@
     "id": "4",
     "project_name": "Adam Trekowski",
     "project_description":"Adventure travel website built with REACT and PHP",
-    "tech_stack":["React", "Javascript", "Php", "Rwd"],
+    "tech_stack":["Javascript", "Php", "Rwd"],
     "banner":"../portfolio/images/adam.png",
     "demo_link":"http://www.farmerolaf.com/adam",
     "git_link":"https://github.com/MarcinPietkiewicz/farmer-react"
@@ -59,7 +59,7 @@
     "tech_stack":["React", "Javascript"],
     "banner":"../portfolio/images/quote.png",
     "demo_link":"https://marcinpietkiewicz.github.io/quote-generator/",
-    "git_link":"https://https://github.com/MarcinPietkiewicz/quote-generator"
+    "git_link":"https://github.com/MarcinPietkiewicz/quote-generator"
 },
 {
     "id": "8",
@@ -68,7 +68,7 @@
     "tech_stack":["React", "Javascript"],
     "banner":"../portfolio/images/drum.png",
     "demo_link":"https://marcinpietkiewicz.github.io/drum-machine/",
-    "git_link":"https://https://github.com/MarcinPietkiewicz/drum-machine"
+    "git_link":"https://github.com/MarcinPietkiewicz/drum-machine"
 },
 {
     "id": "10",
@@ -77,7 +77,7 @@
     "tech_stack":["Javascript", "Api"],
     "banner":"../portfolio/images/weather.png",
     "demo_link":"https://https://marcinpietkiewicz.github.io/weather-app/",
-    "git_link":"https://https://github.com/MarcinPietkiewicz/weather-app"
+    "git_link":"https://github.com/MarcinPietkiewicz/weather-app"
 },
 {
     "id": "11",
@@ -86,9 +86,34 @@
     "tech_stack":["Javascript"],
     "banner":"../portfolio/images/todo.png",
     "demo_link":"https://https://marcinpietkiewicz.github.io/ToDoList/",
-    "git_link":"https://https://github.com/MarcinPietkiewicz/ToDoList"
+    "git_link":"https://github.com/MarcinPietkiewicz/ToDoList"
+},
+{
+    "id": "12",
+    "project_name": "Quote Machine",
+    "project_description":"Quote generator with code converted to Typescript strict mode.",
+    "tech_stack":["React", "Javascript", "Typescript"],
+    "banner":"../portfolio/images/quote-ts.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/quote-typescript/",
+    "git_link":"https://github.com/MarcinPietkiewicz/quote-typescript"
+},
+{
+    "id": "13",
+    "project_name": "Leszetycki Music Society Website",
+    "project_description":"Website with background and css stylized as a museum interior. Rwd design.",
+    "tech_stack":["Rwd"],
+    "banner":"../portfolio/images/leszetycki.png",
+    "demo_link":"https://leszetycki.org/",
+    "git_link":""
+},
+{
+    "id": "14",
+    "project_name": "Strona konkursu pianistycznego",
+    "project_description":"A piano competition website with photo gallery and rwd design",
+    "tech_stack":["Rwd", "Php"],
+    "banner":"../portfolio/images/leschetizky.png",
+    "demo_link":"https://leschetizky.eu/",
+    "git_link":""
 }
-
-
 ]
 }
