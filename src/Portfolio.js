@@ -10,6 +10,29 @@ class Portfolio extends React.Component {
     this.handleFilter = this.handleFilter.bind(this);
   }
 
+  // multi-filter version
+  // handleFilters(e) {
+  //   if (e.target.dataset.tech === "RESET") {
+  //     this.setState({ filters: [] });
+  //     let activeTags = Array.from(document.getElementsByClassName("tag selected"));
+  //     activeTags.forEach((element) => {
+  //       element.classList.remove("selected");
+  //     });
+  //     return;
+  //   }
+  //   let tech = e.target.dataset.tech;
+  //   let arr = this.state.filters;
+
+  //   if (arr.some((el) => el === tech)) {
+  //     this.setState({ filters: this.state.filters.filter((el) => el !== tech) });
+  //     e.target.classList.remove("selected");
+  //   } else {
+  //     this.setState({ filters: [...this.state.filters, tech] });
+  //     e.target.classList.add("selected");
+  //   }
+  // }
+
+  // single filter version 
   handleFilter(e) {
     if (e.target.dataset.tech === "RESET") {
       this.setState({ filters: [] });
@@ -26,7 +49,10 @@ class Portfolio extends React.Component {
       this.setState({ filters: this.state.filters.filter((el) => el !== tech) });
       e.target.classList.remove("selected");
     } else {
-      this.setState({ filters: [...this.state.filters, tech] });
+      this.setState({ filters: [tech] });
+      let activeTags = Array.from(document.getElementsByClassName("tag selected"));
+      activeTags.forEach((element) => {
+        element.classList.remove("selected");});
       e.target.classList.add("selected");
     }
   }
@@ -45,6 +71,7 @@ class Portfolio extends React.Component {
   }
 
   filterTags(tags, data) {
+    console.log('tags = '+tags)
     tags.forEach((tag) => {
       data = data.filter((element) => element.tech_stack.some((el) => el === tag));
     });
@@ -72,7 +99,7 @@ class Portfolio extends React.Component {
     return (
       <React.Fragment>
         <div id="port-flex">
-          <div id="tags-text">Select one or more project tags</div>
+          <div id="tags-text">Select a tag to filter projects</div>
           <div id="tags">
             <button className="tag" onClick={this.handleFilter} data-tech="React">
               React
