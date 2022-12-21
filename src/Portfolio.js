@@ -120,7 +120,7 @@ class Portfolio extends React.Component {
               Typescript
             </button>
             <button className="tag reset" onClick={this.handleFilter} data-tech="RESET">
-              Reset all tags
+              Show all projects
             </button>
           </div>
         </div>
