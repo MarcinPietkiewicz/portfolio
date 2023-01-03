@@ -36,6 +36,15 @@
 },
 {
     "id": "5",
+    "project_name": "Drum Machine Redux",
+    "project_description":"Drum machine simulator built used react hooks and redux. Css only lighting effects.",
+    "tech_stack":["Javascript", "React", "Redux", "Hooks"],
+    "banner":"../portfolio/images/drum-redux.png",
+    "demo_link":"http://marcinpietkiewicz.github.io/drum-machine-redux",
+    "git_link":"https://github.com/MarcinPietkiewicz/drum-machine-redux"
+},
+{
+    "id": "6",
     "project_name": "Github compare",
     "project_description":"A simple tool to view most popoular repos on github and compare two",
     "tech_stack":["Javascript", "React", "Api"],
@@ -44,7 +53,7 @@
     "git_link":"https://github.com/MarcinPietkiewicz/github-compare"
 },
 {
-    "id": "6",
+    "id": "7",
     "project_name": "ReactJS Calculator",
     "project_description":"A simple calculator with memory based on REACT",
     "tech_stack":["React", "Javascript"],
@@ -53,7 +62,7 @@
     "git_link":"https://github.com/MarcinPietkiewicz/javascript-calculator"
 },
 {
-    "id": "7",
+    "id": "8",
     "project_name": "Quote Generator",
     "project_description":"A simple random quote generator based on json file from server and create a twit functionality.",
     "tech_stack":["React", "Javascript"],
@@ -62,7 +71,7 @@
     "git_link":"https://github.com/MarcinPietkiewicz/quote-generator"
 },
 {
-    "id": "8",
+    "id": "9",
     "project_name": "Drum Machine",
     "project_description":"Basic drum-pad based on REACT.",
     "tech_stack":["React", "Javascript"],
