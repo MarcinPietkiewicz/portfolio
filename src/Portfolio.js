@@ -62,10 +62,12 @@ class Portfolio extends React.Component {
   }
 
   fetchProjects() {
-    fetch('https://marcinpietkiewicz.github.io/portfolio/data/mock.json')
+    // fetch('https://marcinpietkiewicz.github.io/portfolio/data/mock.json')
+    fetch('http://localhost:3000/projects')
       .then((response) => response.json())
       .then((result) => {
-        this.setState({ data: result.projects });
+        this.setState({ data: result });
+        // this.setState({ data: result.projects });
       })
       .catch((err) => console.log("Fetch error" + err));
   }
@@ -118,6 +120,9 @@ class Portfolio extends React.Component {
             </button>
             <button className="tag" onClick={this.handleFilter} data-tech="Typescript">
               Typescript
+            </button>
+            <button className="tag" onClick={this.handleFilter} data-tech="Redux">
+              Redux
             </button>
             <button className="tag reset" onClick={this.handleFilter} data-tech="RESET">
               Show all projects
