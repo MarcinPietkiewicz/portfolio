@@ -36,78 +36,6 @@
 },
 {
     "id": "5",
-    "project_name": "Drum Machine Redux",
-    "project_description":"Drum machine simulator built used react hooks and redux. Css only lighting effects.",
-    "tech_stack":["Javascript", "React", "Redux", "Hooks"],
-    "banner":"../portfolio/images/drum-redux.png",
-    "demo_link":"http://marcinpietkiewicz.github.io/drum-machine-redux",
-    "git_link":"https://github.com/MarcinPietkiewicz/drum-machine-redux"
-},
-{
-    "id": "6",
-    "project_name": "Github compare",
-    "project_description":"A simple tool to view most popoular repos on github and compare two",
-    "tech_stack":["Javascript", "React", "Api"],
-    "banner":"../portfolio/images/compare.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/",
-    "git_link":"https://github.com/MarcinPietkiewicz/github-compare"
-},
-{
-    "id": "7",
-    "project_name": "ReactJS Calculator",
-    "project_description":"A simple calculator with memory based on REACT",
-    "tech_stack":["React", "Javascript"],
-    "banner":"../portfolio/images/calculator.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/javascript-calculator/",
-    "git_link":"https://github.com/MarcinPietkiewicz/javascript-calculator"
-},
-{
-    "id": "8",
-    "project_name": "Quote Generator",
-    "project_description":"A simple random quote generator based on json file from server and create a twit functionality.",
-    "tech_stack":["React", "Javascript"],
-    "banner":"../portfolio/images/quote.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/quote-generator/",
-    "git_link":"https://github.com/MarcinPietkiewicz/quote-generator"
-},
-{
-    "id": "9",
-    "project_name": "Drum Machine",
-    "project_description":"Basic drum-pad based on REACT.",
-    "tech_stack":["React", "Javascript"],
-    "banner":"../portfolio/images/drum.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/drum-machine/",
-    "git_link":"https://github.com/MarcinPietkiewicz/drum-machine"
-},
-{
-    "id": "10",
-    "project_name": "Weather App",
-    "project_description":"Simple graphical weather app based on search bar.",
-    "tech_stack":["Javascript", "Api"],
-    "banner":"../portfolio/images/weather.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/weather-app/",
-    "git_link":"https://github.com/MarcinPietkiewicz/weather-app"
-},
-{
-    "id": "11",
-    "project_name": "Simple To-do list",
-    "project_description":"Javascript based to-do list app.",
-    "tech_stack":["Javascript"],
-    "banner":"../portfolio/images/todo.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/ToDoList/",
-    "git_link":"https://github.com/MarcinPietkiewicz/ToDoList"
-},
-{
-    "id": "12",
-    "project_name": "Quote Machine",
-    "project_description":"Quote generator with code converted to Typescript strict mode.",
-    "tech_stack":["React", "Javascript", "Typescript"],
-    "banner":"../portfolio/images/quote-ts.png",
-    "demo_link":"https://marcinpietkiewicz.github.io/quote-typescript/",
-    "git_link":"https://github.com/MarcinPietkiewicz/quote-typescript"
-},
-{
-    "id": "13",
     "project_name": "Leszetycki Music Society Website",
     "project_description":"Website with background and css stylized as a museum interior. Rwd design.",
     "tech_stack":["Rwd"],
@@ -116,13 +44,85 @@
     "git_link":""
 },
 {
-    "id": "14",
+    "id": "6",
     "project_name": "German Piano Competition website",
     "project_description":"A piano competition website with photo gallery and rwd design",
     "tech_stack":["Rwd", "Php"],
     "banner":"../portfolio/images/leschetizky.png",
     "demo_link":"http://leschetizky.eu/",
     "git_link":""
+},
+{
+    "id": "7",
+    "project_name": "Drum Machine Redux",
+    "project_description":"Drum machine simulator built used react hooks and redux. Css only lighting effects.",
+    "tech_stack":["Javascript", "React", "Redux", "Hooks"],
+    "banner":"../portfolio/images/drum-redux.png",
+    "demo_link":"http://marcinpietkiewicz.github.io/drum-machine-redux",
+    "git_link":"https://github.com/MarcinPietkiewicz/drum-machine-redux-vite"
+},
+{
+    "id": "8",
+    "project_name": "Github compare",
+    "project_description":"A simple tool to view most popoular repos on github and compare two",
+    "tech_stack":["Javascript", "React", "Api"],
+    "banner":"../portfolio/images/compare.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/",
+    "git_link":"https://github.com/MarcinPietkiewicz/github-compare"
+},
+{
+    "id": "9",
+    "project_name": "ReactJS Calculator",
+    "project_description":"A simple calculator with memory based on REACT",
+    "tech_stack":["React", "Javascript"],
+    "banner":"../portfolio/images/calculator.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/javascript-calculator/",
+    "git_link":"https://github.com/MarcinPietkiewicz/javascript-calculator"
+},
+{
+    "id": "10",
+    "project_name": "Quote Generator",
+    "project_description":"A simple random quote generator based on json file from server and create a twit functionality.",
+    "tech_stack":["React", "Javascript"],
+    "banner":"../portfolio/images/quote.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/quote-generator/",
+    "git_link":"https://github.com/MarcinPietkiewicz/quote-generator"
+},
+{
+    "id": "11",
+    "project_name": "Drum Machine",
+    "project_description":"Basic drum-pad based on REACT.",
+    "tech_stack":["React", "Javascript"],
+    "banner":"../portfolio/images/drum.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/drum-machine/",
+    "git_link":"https://github.com/MarcinPietkiewicz/drum-machine"
+},
+{
+    "id": "12",
+    "project_name": "Weather App",
+    "project_description":"Simple graphical weather app based on search bar.",
+    "tech_stack":["Javascript", "Api"],
+    "banner":"../portfolio/images/weather.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/weather-app/",
+    "git_link":"https://github.com/MarcinPietkiewicz/weather-app"
+},
+{
+    "id": "13",
+    "project_name": "Simple To-do list",
+    "project_description":"Javascript based to-do list app.",
+    "tech_stack":["Javascript"],
+    "banner":"../portfolio/images/todo.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/ToDoList/",
+    "git_link":"https://github.com/MarcinPietkiewicz/ToDoList"
+},
+{
+    "id": "14",
+    "project_name": "Quote Machine",
+    "project_description":"Quote generator with code converted to Typescript strict mode.",
+    "tech_stack":["React", "Javascript", "Typescript"],
+    "banner":"../portfolio/images/quote-ts.png",
+    "demo_link":"https://marcinpietkiewicz.github.io/quote-typescript/",
+    "git_link":"https://github.com/MarcinPietkiewicz/quote-typescript"
 }
 ]
 }
