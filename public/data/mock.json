@@ -55,10 +55,10 @@
 {
     "id": "7",
     "project_name": "Drum Machine Redux",
-    "project_description":"Drum machine simulator built used react hooks and redux. Css only lighting effects.",
+    "project_description":"Drum machine simulator built used react hooks and redux toolkit. Css only lighting effects.",
     "tech_stack":["Javascript", "React", "Redux", "Hooks"],
     "banner":"../portfolio/images/drum-redux.png",
-    "demo_link":"http://marcinpietkiewicz.github.io/drum-machine-redux",
+    "demo_link":"http://marcinpietkiewicz.github.io/drum-machine-redux-vite",
     "git_link":"https://github.com/MarcinPietkiewicz/drum-machine-redux-vite"
 },
 {
